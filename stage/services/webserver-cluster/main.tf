@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "webcserver_cluster" {
-  source = "github.com/ruejo2013/terraform_modules.git//services/webserver-cluster?ref=v0.0.1"
+  source = "git@github.com:ruejo2013/terraform_modules.git//services/webserver-cluster?ref=v0.0.2"
 
   cluster_name        = "webserver-staging"
   db_remote_bucket    = "mena-terraform-up-and-running-bucket"
